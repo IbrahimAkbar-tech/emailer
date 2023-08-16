@@ -18,8 +18,8 @@ db.all(sql, (err, rows) => {
     let transporter = nodemailer.createTransport({
       host: "smtp.zoho.eu",
       auth: {
-        user: "giscredentials@zohomail.eu",
-        pass: "Shahana123!",
+        user: "YOUR_EMAIL",
+        pass: "YOUR_PASSWORD",
       },
     });
 
