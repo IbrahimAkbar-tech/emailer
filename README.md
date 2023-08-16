@@ -6,7 +6,7 @@ Created for our biggest client - our Portal allows to create users for the Mobil
 
 It takes AN input from the .CSV file - used to upload on to the portal - & sends the email(s).
 
-Example of the .CSV file can be found in the repository "exmaple_data.csv"
+Example of the .CSV file can be found in the repository "example_data.csv"
 
 Stack used:
 
