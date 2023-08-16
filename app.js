@@ -43,26 +43,3 @@ db.all(sql, (err, rows) => {
 setTimeout(() => {
   db.run("DELETE from curry");
 }, "10000");
-
-/* 
-uncomment to add a column
-
-db.run("ALTER TABLE curry ADD COLUMN gisid INT");
-*/
-
-/* --------------------------DELETE QUERIES-----------------------------*/
-
-// db.run("DELETE from curry");
-
-/* 
-uncomment to delete column
-
-db.run("ALTER TABLE curry DROP COLUMN deleting");
-*/
-
-/* 
-uncomment to delete row
-
-db.run("DELETE FROM curry WHERE gisid=30843")
-
-*/
