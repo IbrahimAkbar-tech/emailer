@@ -3,7 +3,7 @@ const sqlite3 = require("sqlite3").verbose();
 
 const db = new sqlite3.Database("./users.db");
 
-const sql = `SELECT * from curry`;
+const sql = `SELECT * from TABLE_NAME`;
 
 db.all(sql, (err, rows) => {
   if (err) {
