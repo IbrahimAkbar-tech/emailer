@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { parse } = require("csv-parse");
 
-fs.createReadStream("./curry_data.csv")
+fs.createReadStream("./example_data.csv")
   .pipe(parse({ delimiter: ",", from_line: 2 }))
   .on("data", function (row) {
     console.log(row);
