@@ -26,8 +26,8 @@ db.all(sql, (err, rows) => {
     let mailOptions = {
       from: "giscredentials@zohomail.eu",
       to: row.email,
-      subject: `Shoplive login details`,
-      text: `Hi ${firstName}, please use the below credentials to sign into Shoplive:\n\nUsername: ${username}\nPin: ${pin}\n\nPlease do not reply to this email.\nThanks,\nThe Emplifi Team\n`,
+      subject: `Login details`,
+      text: `Hi ${firstName}, please use the below credentials to sign into Shoplive:\n\nUsername: ${username}\nPin: ${pin}\n\nPlease do not reply to this email.\nThanks,\nThe Service Team\n`,
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
