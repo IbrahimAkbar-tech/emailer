@@ -7,7 +7,7 @@ fs.createReadStream("./example_data.csv")
   .on("data", function (row) {
     db.serialize(function () {
       db.run(
-        `INSERT INTO curry VALUES (?, ?, ? ,?, ?, ? ,?, ?, ? ,?, ?, ? ,?, ?, ?, ?, ?, ?, ?)`,
+        `INSERT INTO TABLE_NAME VALUES (?, ?, ? ,?, ?, ? ,?, ?, ? ,?, ?, ? ,?, ?, ?, ?, ?, ?, ?)`,
         [
           row[0],
           row[1],

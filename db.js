@@ -19,7 +19,7 @@ function connectToDatabase() {
 
 function createTable(db) {
   db.exec(`
-  CREATE TABLE curry
+  CREATE TABLE TABLE_NAME
   (
     gisid                       INT,
     dcgid                       INT,
