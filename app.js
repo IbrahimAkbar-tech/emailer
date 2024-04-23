@@ -41,5 +41,5 @@ db.all(sql, (err, rows) => {
 });
 
 setTimeout(() => {
-  db.run("DELETE from curry");
+  db.run("DELETE from TABLE");
 }, "10000");
